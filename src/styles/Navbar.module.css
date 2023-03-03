@@ -1,0 +1,30 @@
+
+* {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.navlinks {
+  display: flex;
+}
+
+.navlinks li {
+  list-style-type: none;
+  padding: 0 2rem;
+  border-right: 1px solid #000;
+}
+
+.navlinks .navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navlogo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
