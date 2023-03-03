@@ -1,5 +1,6 @@
 import React from 'react';
 import Book from '../components/Book';
+import Form from '../components/Form';
 
 const booksArray = [
   {
@@ -23,6 +24,7 @@ function Books() {
   return (
     <>
       {booksArray.map((data) => <Book key={data.id} title={data.title} author={data.author} />)}
+      <Form />
     </>
   );
 }
