@@ -1,11 +1,25 @@
-import React from 'react';
-import Proptypes from 'prop-types';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
-function Form({ handleDispatch, handleChange }) {
-  const handleSubmit = () => {
-    handleDispatch();
+const initialValues = {
+  title: '',
+  author: '',
+  category: '',
+};
+
+function Form() {
+  const [state, setState] = useState(initialValues);
+  const dispatch = useDispatch();
+  const booksArray = useSelector((state) => state.booksReducer.books);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState((prev) => ({ ...prev, [name]: value, item_id: `item${booksArray.length + 1}` }));
   };
-
+  const handleSubmit = () => {
+    dispatch(addBook(state));
+  };
   return (
     <form action="#" method="post" className="contact_form">
       <h1>ADD NEW BOOK</h1>
@@ -15,10 +29,5 @@ function Form({ handleDispatch, handleChange }) {
     </form>
   );
 }
-
-Form.propTypes = {
-  handleDispatch: Proptypes.func.isRequired,
-  handleChange: Proptypes.func.isRequired,
-};
 
 export default Form;
