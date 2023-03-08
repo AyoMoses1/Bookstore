@@ -4,8 +4,8 @@ import booksReducer from './books/booksSlice';
 
 const store = configureStore({
   reducer: {
-    categories: categoriesReducer,
-    books: booksReducer,
+    categoriesReducer,
+    booksReducer,
   },
 });
 

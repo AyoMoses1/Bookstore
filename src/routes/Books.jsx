@@ -1,29 +1,22 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../components/Book';
 import Form from '../components/Form';
 
-const booksArray = [
-  {
-    id: 1,
-    author: 'The Hunter Games',
-    title: 'Suzanne Collins',
-  },
-  {
-    id: 2,
-    author: 'Dune',
-    title: 'Frank Hebert',
-  },
-  {
-    id: 3,
-    author: 'Capital in the Twenty-First Century',
-    title: 'Suzanne Collins',
-  },
-];
-
 function Books() {
+  const booksArray = useSelector((state) => state.booksReducer.books);
   return (
     <>
-      {booksArray.map((data) => <Book key={data.id} title={data.title} author={data.author} />)}
+      {booksArray.map(
+        (data) => (
+          <Book
+            key={data.item_id}
+            title={data.title}
+            author={data.author}
+            id={data.item_id}
+          />
+        ),
+      )}
       <Form />
     </>
   );
