@@ -65,7 +65,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 - [Live Demo Link](https://ayomoses1.github.io/Awesome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -74,7 +73,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -192,7 +190,6 @@ I would like to thank The entire Microverse team for the well documented and hig
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 - **Will there be a desktop version of this project**
 
   - Yes, there will certainly be a desktop version to aid desktop users in having a friendly UX experience on the website
