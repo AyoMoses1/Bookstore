@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
 
 const initialValues = {
@@ -18,7 +19,8 @@ function Form() {
     setState((prev) => ({ ...prev, [name]: value, item_id: `item${booksArray.length + 1}` }));
   };
   const handleSubmit = () => {
-    dispatch(addBook(state));
+    console.log(state);
+    dispatch(addBook({ item_id: uuidv4(), ...state }));
   };
   return (
     <form action="#" method="post" className="contact_form">
