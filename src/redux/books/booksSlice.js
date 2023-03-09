@@ -37,15 +37,11 @@ const bookSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchBooks.pending, (state, action) => {
-      state.status = 'Loading...';
-    }),
     builder.addCase(fetchBooks.fulfilled, (state, action) => {
-      state.books = action.payload;
-      state.status = 'fulfilled';
-    });
-    builder.addCase(fetchBooks.rejected, (state, action) => {
-      state.error = action.payload;
+      const newState = { ...state };
+      newState.books = action.payload;
+      newState.status = 'fulfilled';
+      return newState;
     });
   },
 });
