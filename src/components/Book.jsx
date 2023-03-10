@@ -16,7 +16,9 @@ function Book({
         <span className={style.author}>{author}</span>
         <div className={style.actions}>
           <button type="button" className={style.button}>Comments</button>
+          <span className="div" />
           <button type="button" className={style.button} onClick={() => dispatch(removeBook(id))}>Remove</button>
+          <span className="div" />
           <button type="button" className={style.button}>Edit</button>
         </div>
       </div>

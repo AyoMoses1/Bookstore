@@ -52,6 +52,7 @@
 
 .author {
   color: #4386bf;
+  opacity: 0.7;
 }
 
 .button {
@@ -61,6 +62,7 @@
   color: #4386bf;
   font-size: 0.875rem;
   font-weight: 300;
+  opacity: 0.7;
 }
 
 .actions {

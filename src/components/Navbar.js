@@ -25,6 +25,9 @@ const Navbar = () => {
             </React.Fragment>
           ))}
         </ul>
+        <div className={styles.user}>
+          <i className="fa-solid fa-user"></i>
+        </div>
       </nav>
     </>
   );

@@ -35,3 +35,10 @@
   font-weight: bold;
   color: #0290ff;
 }
+
+.user {
+  margin-left: auto;
+  padding: 0.875rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+}
