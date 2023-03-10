@@ -21,6 +21,7 @@ function Books() {
             title={data.title}
             author={data.author}
             id={data.item_id}
+            category={data.category}
           />
         ),
       ) : ''}
