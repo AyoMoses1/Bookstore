@@ -37,16 +37,17 @@
 .bookDetails {
   width: 30%;
 }
+
 .category {
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: bold;
   color: #121212;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 
 .author {
@@ -71,7 +72,7 @@
 }
 
 .chapterName {
-  margin:  0.5rem 0 2rem;
+  margin: 0.5rem 0 2rem;
 }
 
 .chapterButton {
@@ -84,14 +85,14 @@
 }
 
 .score {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #121212;
 }
 
 .completed {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   letter-spacing: normal;
   color: #121212;

@@ -1,9 +1,7 @@
-/*eslint-disable*/
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import Proptypes from 'prop-types';
 import { removeBook } from '../redux/books/booksSlice';
-import { checkStatus } from '../redux/categories/categoriesSlice';
 import style from '../styles/Book.module.css';
 
 function Book({
@@ -24,7 +22,7 @@ function Book({
       </div>
       <div className={style.statistics}>
         <div className={style.oval}>
-          <div className={style.circularProgress}></div>
+          <div className={style.circularProgress} />
         </div>
         <div>
           <h2 className={style.score}>64%</h2>

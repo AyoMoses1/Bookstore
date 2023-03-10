@@ -7,7 +7,7 @@
   display: flex;
   margin-bottom: 5em;
   align-items: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
 }
@@ -21,7 +21,7 @@
   padding: 0 2rem;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: #121212;
   text-transform: uppercase;
