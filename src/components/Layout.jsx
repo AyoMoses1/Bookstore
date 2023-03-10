@@ -5,9 +5,11 @@ import Navbar from './Navbar';
 
 function Layout() {
   return (
-    <div className="main-wrapper">
+    <div>
       <Navbar />
-      <Outlet />
+      <div className="main-wrapper">
+        <Outlet />
+      </div>
     </div>
   );
 }

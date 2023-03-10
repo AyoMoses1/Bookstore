@@ -20,11 +20,14 @@ const Navbar = () => {
           {links.map((link) => (
             <React.Fragment key={link.text}>
               <li>
-                <NavLink to={link.path}>{link.text}</NavLink>
+                <NavLink to={link.path} className={styles.link}>{link.text}</NavLink>
               </li>
             </React.Fragment>
           ))}
         </ul>
+        <div className={styles.user}>
+          <i className="fa-solid fa-user"></i>
+        </div>
       </nav>
     </>
   );
