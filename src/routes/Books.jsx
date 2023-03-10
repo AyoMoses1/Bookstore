@@ -25,6 +25,7 @@ function Books() {
           />
         ),
       ) : ''}
+      <div className="divider" />
       <Form />
     </>
   );

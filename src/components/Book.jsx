@@ -27,8 +27,8 @@ function Book({
           <div className={style.circularProgress}></div>
         </div>
         <div>
-          <h2>64%</h2>
-          <span>completed</span>
+          <h2 className={style.score}>64%</h2>
+          <span className={style.completed}>completed</span>
         </div>
       </div>
       <div className="chapter">

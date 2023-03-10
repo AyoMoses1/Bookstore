@@ -31,9 +31,11 @@ function Form() {
   return (
     <form action="#" method="post" className="contact_form">
       <h1>ADD NEW BOOK</h1>
-      <input className="form_item" id="book_title" value={state.title} type="text" name="title" placeholder="Book title" maxLength="30" onChange={handleChange} required />
-      <input className="form_item" id="book_author" value={state.author} type="text" name="author" placeholder="Author" onChange={handleChange} required />
-      <button type="button" className="form_button" onClick={handleSubmit}>ADD BOOK</button>
+      <div className="form-inputs">
+        <input className="form_item" id="book_title" value={state.title} type="text" name="title" placeholder="Book title" maxLength="30" onChange={handleChange} required />
+        <input className="form_item" id="book_author" value={state.author} type="text" name="author" placeholder="Author" onChange={handleChange} required />
+        <button type="button" className="form_button" onClick={handleSubmit}>ADD BOOK</button>
+      </div>
     </form>
   );
 }
