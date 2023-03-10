@@ -13,3 +13,7 @@ body {
 .main-wrapper {
   padding: 0 100px;
 }
+
+.active {
+  opacity: 1;
+}

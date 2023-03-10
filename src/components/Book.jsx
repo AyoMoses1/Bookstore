@@ -23,7 +23,9 @@ function Book({
         </div>
       </div>
       <div className={style.statistics}>
-        <div className={style.oval}></div>
+        <div className={style.oval}>
+          <div className={style.circularProgress}></div>
+        </div>
         <div>
           <h2>64%</h2>
           <span>completed</span>
@@ -31,7 +33,7 @@ function Book({
       </div>
       <div className="chapter">
         <span className={style.chapter}>CURRENT CHAPTER</span>
-        <h3>Chapter 17</h3>
+        <h3 className={style.chapterName}>Chapter 17</h3>
         <button type="button" className={style.chapterButton}>UPDATE PROGRESS</button>
       </div>
     </div>
