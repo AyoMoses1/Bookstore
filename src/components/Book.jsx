@@ -30,9 +30,9 @@ function Book({
         </div>
       </div>
       <div className="chapter">
-        <span>CURRENT CHAPTER</span>
+        <span className={style.chapter}>CURRENT CHAPTER</span>
         <h3>Chapter 17</h3>
-        <button type="button" className="chapterButton">UPDATE PROGRESS</button>
+        <button type="button" className={style.chapterButton}>UPDATE PROGRESS</button>
       </div>
     </div>
   );

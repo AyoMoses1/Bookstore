@@ -5,6 +5,7 @@
   align-items: center;
   margin-bottom: 2em;
   padding: 2em;
+  border: 1px solid #e8e8e8;
 }
 
 .oval {
@@ -30,6 +31,8 @@
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: bold;
+  color: #121212;
+  font-family: Montserrat;
 }
 
 .title {
@@ -37,18 +40,30 @@
 }
 
 .author {
-  color: rgb(107,160,205);
+  color: #4386bf;
 }
 
 .button {
   background: transparent;
   border: none;
   padding-left: 0;
-  color: rgb(107,160,205);
+  color: #4386bf;
   font-size: 0.875rem;
   font-weight: 300;
 }
 
 .actions {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.chapter {
+  color: #121212;
+}
+.chapterButton {
+  background: #0290ff;
+  border: none;
+  color: #e8e8e8;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  font-weight: 300;
 }
