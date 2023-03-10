@@ -1,13 +1,20 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Book from '../components/Book';
 import Form from '../components/Form';
+import { fetchBooks } from '../redux/books/booksSlice';
 
 function Books() {
   const booksArray = useSelector((state) => state.booksReducer.books);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
   return (
     <>
-      {booksArray.map(
+      {booksArray.length > 0 ? booksArray.map(
         (data) => (
           <Book
             key={data.item_id}
@@ -16,7 +23,7 @@ function Books() {
             id={data.item_id}
           />
         ),
-      )}
+      ) : ''}
       <Form />
     </>
   );
