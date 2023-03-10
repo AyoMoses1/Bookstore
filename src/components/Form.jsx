@@ -19,8 +19,9 @@ function Form() {
     setState((prev) => ({ ...prev, [name]: value, item_id: `item${booksArray.length + 1}` }));
   };
   const handleSubmit = () => {
-    console.log(state);
-    dispatch(addBook({ item_id: uuidv4(), ...state }));
+    console.log(uuidv4());
+    console.log({...state,item_id: uuidv4(), });
+    dispatch(addBook({...state, item_id: uuidv4() }));
   };
   return (
     <form action="#" method="post" className="contact_form">
